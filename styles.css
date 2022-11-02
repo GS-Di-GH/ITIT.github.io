@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+body {
+  margin:0;
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(91,128,102,1) 41%, rgba(69,142,83,1) 100%);
+}
+h1 {
+  color: blue;
+}
+h2 {
+  font-family: monospace;
+  color: #606060;
+}
+p {
+  color: red;
+}
+nav {
+  width: 4000px;
+  
+}
+ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+.topmenu > li {
+  display: inline-block;
+  margin-right: 70px;
+  position: relative;
+}
+.topmenu > li:last-child {
+  margin-right: 0;
+}
+a {
+  display: block;
+  padding: 10px 80px;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Lora', serif;
+  transition: .5s linear;
+}
+.fa {
+  font-family: "FontAwesome";
+  color: inherit;
+  padding-left: 10px;
+}
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 10;
+  width: 100%;
+  z-index: 1;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.one ul {
+  background: #000000;
+}
+.one ul a {
+  color: #FFFFFF;
+}
+.one .submenu {
+  display: none;
+  background: #000000;
+}
+.one ul li:hover .submenu {
+  display: block;
+}
+.two ul {
+  background: #000000;
+}
+.two ul a {
+  color: #FFFFFF;
+}
+.two .submenu {
+  visibility: hidden;
+  background: #000000;
+}
+.two ul li:hover .submenu {
+  visibility: visible;
+}
+.three ul {
+  background: #000000;
+}
+.three ul a {
+  color: #000000;
+}
+.three .submenu {
+  visibility: hidden;
+  opacity: 0;
+  background: #000000;
+}
+.three ul li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+.four ul {
+  background: rgb(18,18,18);
+background: linear-gradient(106deg, rgba(18,18,18,0.5550595238095238) 0%, rgba(0,255,29,0.4234068627450981) 100%);
+}
+.four .submenu {
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: #000000;
+}
+.four ul li:hover .submenu {
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
+}
+.four ul a {
+  color: #FFFFFF;
+}
+.five ul {
+  background: #000000;
+}
+.five ul a {
+  color: #FFFFFF;
+}
+.five .submenu {
+  background: #000000;
+}
+.submenu li a {
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  color: white;
+}
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 50px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0px;
+}
+.sidenav a {
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.main {
+    margin-left: 70px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
